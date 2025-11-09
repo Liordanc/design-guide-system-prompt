@@ -1,0 +1,140 @@
+{
+  "pattern_id": "StandardForm_v1",
+  "type": "form_page",
+  "page": {
+    "background_color_token": "--background",
+    "text_color_token": "--foreground",
+    "padding_horizontal_px": 24,
+    "padding_vertical_px": 24,
+    "max_width_px": 720,
+    "layout": "centered_column"
+  },
+  "sections": [
+    {
+      "section_id": "form_header",
+      "type": "form_header",
+      "content": {
+        "title": {
+          "text_role": "FORM_TITLE",
+          "font_size_px": 22,
+          "font_weight": 600,
+          "color_token": "--foreground",
+          "margin_bottom_px": 8
+        },
+        "description": {
+          "text_role": "FORM_DESCRIPTION",
+          "font_size_px": 14,
+          "font_weight": 400,
+          "color_token": "--muted-foreground",
+          "margin_bottom_px": 16
+        }
+      }
+    },
+    {
+      "section_id": "form_fields",
+      "type": "field_groups",
+      "layout": {
+        "vertical_gap_between_fields_px": 16,
+        "vertical_gap_between_groups_px": 24
+      },
+      "groups": [
+        {
+          "group_id": "billing_details",
+          "group_title": {
+            "optional": true,
+            "text_role": "GROUP_TITLE",
+            "font_size_px": 16,
+            "font_weight": 600,
+            "color_token": "--foreground",
+            "margin_bottom_px": 8
+          },
+          "fields": [
+            {
+              "field_id": "full_name",
+              "field_type": "text",
+              "label": {
+                "text_role": "LABEL",
+                "font_size_px": 14,
+                "font_weight": 500,
+                "color_token": "--foreground",
+                "margin_bottom_px": 4
+              },
+              "input": {
+                "height_px": 40,
+                "background_color_token": "--card",
+                "border_color_token": "--input",
+                "text_color_token": "--foreground",
+                "border_radius_token": "--radius-md",
+                "padding_horizontal_px": 12,
+                "padding_vertical_px": 8
+              },
+              "helper_text": {
+                "optional": true,
+                "text_role": "HELPER_TEXT",
+                "font_size_px": 12,
+                "font_weight": 400,
+                "color_token": "--muted-foreground",
+                "margin_top_px": 4
+              }
+            },
+            {
+              "field_id": "email",
+              "same_structure_as": "full_name"
+            }
+          ]
+        },
+        {
+          "group_id": "payment_plan",
+          "group_title": {
+            "optional": false,
+            "text_role": "GROUP_TITLE",
+            "font_size_px": 16,
+            "font_weight": 600,
+            "color_token": "--foreground",
+            "margin_bottom_px": 8
+          },
+          "fields": [
+            {
+              "field_id": "plan_type",
+              "field_type": "select",
+              "same_structure_as": "full_name",
+              "options_role": "PLAN_OPTIONS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "form_actions",
+      "type": "form_actions",
+      "layout": {
+        "display": "flex",
+        "justify_content": "flex-end",
+        "horizontal_gap_between_buttons_px": 8,
+        "margin_top_px": 24
+      },
+      "buttons": [
+        {
+          "button_id": "cancel",
+          "variant": "secondary",
+          "size": "medium",
+          "background_color_token": "--secondary",
+          "text_color_token": "--secondary-foreground",
+          "border_radius_token": "--radius-md",
+          "padding_horizontal_px": 12,
+          "padding_vertical_px": 8
+        },
+        {
+          "button_id": "submit",
+          "variant": "primary",
+          "size": "medium",
+          "background_color_token": "--primary",
+          "text_color_token": "--primary-foreground",
+          "border_radius_token": "--radius-md",
+          "padding_horizontal_px": 16,
+          "padding_vertical_px": 8
+        }
+      ]
+    }
+  ]
+}
