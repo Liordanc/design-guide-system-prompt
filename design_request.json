@@ -1,0 +1,34 @@
+{
+  "design_request_id": "example_001",
+  "product_type": "web_app",
+  "primary_use_cases": [
+    "ניהול דשבורדים",
+    "הצגת נתונים פיננסיים למשתמש"
+  ],
+  "brand_tone": {
+    "keywords": ["מודרני", "נקי", "אמין", "לא צעקני"],
+    "primary_color_preference": "#34a85a",
+    "secondary_color_preference": "#6495ed",
+    "neutral_style": "בהיר, רקעים אפורים עדינים"
+  },
+  "target_users": [
+    "מנהלי מוצר",
+    "מנהלי כספים בחברות SaaS"
+  ],
+  "language_direction": "rtl",
+  "required_screens": [
+    "dashboard_summary",
+    "billing_form",
+    "settings_with_sidebar"
+  ],
+  "accessibility_requirements": {
+    "minimum_contrast": "WCAG_AA",
+    "keyboard_navigation": true
+  },
+  "implementation_preferences": {
+    "css_tokens_style": "shadcn_like",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "use_component_library_style": "shadcn_ui_compatible"
+  }
+}
