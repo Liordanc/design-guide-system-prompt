@@ -1,0 +1,91 @@
+{
+  "pattern_id": "SettingsWithSidebar_v1",
+  "type": "settings_page",
+  "page": {
+    "background_color_token": "--background",
+    "text_color_token": "--foreground",
+    "padding_horizontal_px": 24,
+    "padding_vertical_px": 24,
+    "max_width_px": 1200,
+    "layout": "two_column_with_sidebar"
+  },
+  "layout": {
+    "sidebar_width_px": 260,
+    "content_min_width_px": 640,
+    "horizontal_gap_px": 24
+  },
+  "sections": [
+    {
+      "section_id": "settings_shell",
+      "type": "two_column",
+      "columns": {
+        "sidebar": {
+          "background_color_token": "--sidebar",
+          "text_color_token": "--sidebar-foreground",
+          "border_color_token": "--sidebar-border",
+          "border_radius_token": "--radius-lg",
+          "shadow_token": "--shadow-xs",
+          "padding_all_px": 16,
+          "items": [
+            {
+              "item_id": "profile",
+              "text_role": "SIDEBAR_LINK",
+              "font_size_px": 14,
+              "font_weight": 500,
+              "color_token": "--sidebar-foreground",
+              "padding_vertical_px": 8,
+              "padding_horizontal_px": 12,
+              "border_radius_token": "--radius-md",
+              "state": "default"
+            },
+            {
+              "item_id": "billing",
+              "same_structure_as": "profile",
+              "state": "active",
+              "background_color_token": "--sidebar-primary",
+              "active_text_color_token": "--sidebar-primary-foreground"
+            },
+            {
+              "item_id": "notifications",
+              "same_structure_as": "profile",
+              "state": "default"
+            }
+          ]
+        },
+        "content": {
+          "background_color_token": "--card",
+          "text_color_token": "--card-foreground",
+          "border_color_token": "--border",
+          "border_radius_token": "--radius-lg",
+          "shadow_token": "--shadow-sm",
+          "padding_all_px": 24,
+          "sections": [
+            {
+              "content_section_id": "section_header",
+              "type": "content_header",
+              "title": {
+                "text_role": "SECTION_TITLE",
+                "font_size_px": 22,
+                "font_weight": 600,
+                "color_token": "--foreground",
+                "margin_bottom_px": 4
+              },
+              "description": {
+                "text_role": "SECTION_DESCRIPTION",
+                "font_size_px": 14,
+                "font_weight": 400,
+                "color_token": "--muted-foreground",
+                "margin_bottom_px": 16
+              }
+            },
+            {
+              "content_section_id": "section_body",
+              "type": "form_group",
+              "ref_pattern_id": "StandardForm_v1"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
