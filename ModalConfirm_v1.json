@@ -1,0 +1,65 @@
+{
+  "pattern_id": "ModalConfirm_v1",
+  "type": "dialog",
+  "spec": {
+    "dialog": {
+      "background_overlay_color_token": "--background",
+      "overlay_opacity": 0.6,
+      "content": {
+        "background_color_token": "--card",
+        "text_color_token": "--card-foreground",
+        "border_color_token": "--border",
+        "border_radius_token": "--radius-lg",
+        "shadow_token": "--shadow-lg",
+        "padding_all_px": 24,
+        "max_width_px": 480
+      },
+      "structure": {
+        "title": {
+          "text_role": "DIALOG_TITLE",
+          "font_size_px": 18,
+          "font_weight": 600,
+          "color_token": "--foreground",
+          "margin_bottom_px": 8
+        },
+        "description": {
+          "text_role": "DIALOG_DESCRIPTION",
+          "font_size_px": 14,
+          "font_weight": 400,
+          "color_token": "--muted-foreground",
+          "margin_bottom_px": 16
+        },
+        "actions": {
+          "layout": {
+            "display": "flex",
+            "justify_content": "flex-end",
+            "horizontal_gap_px": 8
+          },
+          "buttons": [
+            {
+              "button_id": "cancel",
+              "variant": "outline",
+              "size": "medium",
+              "background_color_token": "--card",
+              "text_color_token": "--foreground",
+              "border_color_token": "--border",
+              "border_radius_token": "--radius-md",
+              "padding_horizontal_px": 12,
+              "padding_vertical_px": 8
+            },
+            {
+              "button_id": "confirm",
+              "variant": "destructive",
+              "size": "medium",
+              "background_color_token": "--destructive",
+              "text_color_token": "--destructive-foreground",
+              "border_radius_token": "--radius-md",
+              "padding_horizontal_px": 16,
+              "padding_vertical_px": 8
+            }
+          ]
+        }
+      }
+    }
+  }
+}
