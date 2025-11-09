@@ -1,0 +1,553 @@
+{
+  "design_guide_id": "example_001_output",
+  "based_on_request_id": "example_001",
+  "tokens": {
+    "css_root_variables": {
+      "--background": "#f9f9fa",
+      "--foreground": "#333333",
+      "--card": "#ffffff",
+      "--card-foreground": "#333333",
+      "--popover": "#ffffff",
+      "--popover-foreground": "#333333",
+      "--primary": "#34a85a",
+      "--primary-foreground": "#ffffff",
+      "--secondary": "#6495ed",
+      "--secondary-foreground": "#ffffff",
+      "--muted": "#ddd9c4",
+      "--muted-foreground": "#6e6e6e",
+      "--accent": "#66d9ef",
+      "--accent-foreground": "#333333",
+      "--destructive": "#ef4444",
+      "--destructive-foreground": "#ffffff",
+      "--border": "#d4d4d4",
+      "--input": "#d4d4d4",
+      "--ring": "#34a85a",
+      "--chart-1": "#34a85a",
+      "--chart-2": "#6495ed",
+      "--chart-3": "#66d9ef",
+      "--chart-4": "#4682b4",
+      "--chart-5": "#1a9641",
+      "--sidebar": "#f9f9fa",
+      "--sidebar-foreground": "#333333",
+      "--sidebar-primary": "#34a85a",
+      "--sidebar-primary-foreground": "#ffffff",
+      "--sidebar-accent": "#66d9ef",
+      "--sidebar-accent-foreground": "#333333",
+      "--sidebar-border": "#d4d4d4",
+      "--sidebar-ring": "#34a85a",
+      "--font-sans": "Public Sans, ui-sans-serif, sans-serif, system-ui",
+      "--font-serif": "Source Serif 4, serif",
+      "--font-mono": "JetBrains Mono, monospace",
+      "--radius": "0.5rem",
+      "--radius-sm": "4px",
+      "--radius-md": "6px",
+      "--radius-lg": "8px",
+      "--radius-xl": "12px",
+      "--shadow-2xs": "0 1px 3px 0px hsl(0 0% 0% / 0.05)",
+      "--shadow-xs": "0 1px 3px 0px hsl(0 0% 0% / 0.05)",
+      "--shadow-sm": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-md": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-lg": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-xl": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-2xl": "0 1px 3px 0px hsl(0 0% 0% / 0.25)",
+      "--spacing": "0.25rem"
+    },
+    "css_dark_variables": {
+      "--background": "#1a1d23",
+      "--foreground": "#e5e5e5",
+      "--card": "#2f3436",
+      "--card-foreground": "#e5e5e5",
+      "--popover": "#2f3436",
+      "--popover-foreground": "#e5e5e5",
+      "--primary": "#34a85a",
+      "--primary-foreground": "#ffffff",
+      "--secondary": "#4682b4",
+      "--secondary-foreground": "#e5e5e5",
+      "--muted": "#444444",
+      "--muted-foreground": "#a3a3a3",
+      "--accent": "#6495ed",
+      "--accent-foreground": "#e5e5e5",
+      "--destructive": "#ef4444",
+      "--destructive-foreground": "#ffffff",
+      "--border": "#444444",
+      "--input": "#444444",
+      "--ring": "#34a85a",
+      "--chart-1": "#34a85a",
+      "--chart-2": "#4682b4",
+      "--chart-3": "#6495ed",
+      "--chart-4": "#66d9ef",
+      "--chart-5": "#1a9641",
+      "--sidebar": "#1a1d23",
+      "--sidebar-foreground": "#e5e5e5",
+      "--sidebar-primary": "#34a85a",
+      "--sidebar-primary-foreground": "#ffffff",
+      "--sidebar-accent": "#6495ed",
+      "--sidebar-accent-foreground": "#e5e5e5",
+      "--sidebar-border": "#444444",
+      "--sidebar-ring": "#34a85a",
+      "--font-sans": "Public Sans, ui-sans-serif, sans-serif, system-ui",
+      "--font-serif": "Source Serif 4, serif",
+      "--font-mono": "JetBrains Mono, monospace",
+      "--radius": "0.5rem",
+      "--radius-sm": "4px",
+      "--radius-md": "6px",
+      "--radius-lg": "8px",
+      "--radius-xl": "12px",
+      "--shadow-2xs": "0 1px 3px 0px hsl(0 0% 0% / 0.05)",
+      "--shadow-xs": "0 1px 3px 0px hsl(0 0% 0% / 0.05)",
+      "--shadow-sm": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-md": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-lg": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-xl": "0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10)",
+      "--shadow-2xl": "0 1px 3px 0px hsl(0 0% 0% / 0.25)",
+      "--spacing": "0.25rem"
+    },
+    "typography_scale": {
+      "H1": 28,
+      "H2": 22,
+      "H3": 18,
+      "Body": 16,
+      "Small": 14,
+      "XSmall": 12
+    },
+    "spacing_scale_px": [0, 4, 8, 12, 16, 20, 24, 32, 40, 48]
+  },
+  "guidelines": {
+    "typography": "H1 משמש לכותרת ראשית למסך; H2 לסקשן ראשי; H3 לתתי־כותרות; Body לטקסט רגיל; Small לטקסט עזר ותיאורים משניים.",
+    "spacing": "כל המרווחים נבחרים רק מתוך הסקאלה [0,4,8,12,16,20,24,32,40,48]. בטפסים יש 16px בין שדות, 24px בין קבוצות שדות, 24px בין שדה אחרון לכפתורי פעולה. בכרטיסים 4px בין כותרת לתת־כותרת, 8px בין תת־כותרת לתוכן, 16px בין תוכן לפעולות.",
+    "components": "כפתורים משתמשים ברדיוס בינוני, צבעי primary/secondary/outline/destructive מתוך הטוקנים. שדות טופס כוללים Label מעל, Input באמצע, HelperText מתחת. כרטיסים כוללים כותרת, תיאור, תוכן ופעולות תחתונות. דיאלוגים כוללים כותרת, תיאור, תוכן וכפתורים בשורה תחתונה.",
+    "patterns": "מוגדרים שלושה דפוסים עיקריים: DashboardSummaryWithChart_v1 להצגת כרטיסי סיכום וגרף; StandardForm_v1 לטופס סטנדרטי עם כותרת, תיאור, קבוצות שדות וכפתורי פעולה; SettingsWithSidebar_v1 לעמוד הגדרות דו־עמודי עם Sidebar ותוכן טופס."
+  },
+  "patterns": [
+    {
+      "pattern_id": "DashboardSummaryWithChart_v1",
+      "type": "dashboard",
+      "spec": {
+        "screen_id": "DashboardSummaryWithChart_v1",
+        "page": {
+          "background_color_token": "--background",
+          "text_color_token": "--foreground",
+          "padding_horizontal_px": 24,
+          "padding_vertical_px": 24,
+          "max_width_px": 960,
+          "layout": "centered_column"
+        },
+        "sections": [
+          {
+            "section_id": "summary_cards_row",
+            "type": "card_row",
+            "margin_bottom_px": 24,
+            "layout": {
+              "display": "grid",
+              "columns_by_breakpoint": {
+                "sm": 1,
+                "md": 2,
+                "lg": 4
+              },
+              "column_gap_px": 16,
+              "row_gap_px": 16
+            },
+            "cards": [
+              {
+                "card_id": "card_total_revenue",
+                "background_color_token": "--card",
+                "text_color_token": "--card-foreground",
+                "border_color_token": "--border",
+                "border_width_px": 1,
+                "border_radius_token": "--radius-lg",
+                "shadow_token": "--shadow-sm",
+                "padding_all_px": 16,
+                "content": {
+                  "title": {
+                    "text_role": "TOTAL_REVENUE_LABEL",
+                    "font_size_px": 14,
+                    "font_weight": 500,
+                    "color_token": "--muted-foreground",
+                    "margin_bottom_px": 4
+                  },
+                  "value": {
+                    "text_role": "TOTAL_REVENUE_VALUE",
+                    "font_size_px": 28,
+                    "font_weight": 600,
+                    "color_token": "--foreground",
+                    "margin_bottom_px": 4
+                  },
+                  "subtext": {
+                    "text_role": "TOTAL_REVENUE_SECONDARY",
+                    "font_size_px": 14,
+                    "font_weight": 400,
+                    "color_token": "--muted-foreground"
+                  }
+                }
+              },
+              {
+                "card_id": "card_new_customers",
+                "same_as": "card_total_revenue"
+              },
+              {
+                "card_id": "card_active_accounts",
+                "same_as": "card_total_revenue"
+              },
+              {
+                "card_id": "card_growth_rate",
+                "same_as": "card_total_revenue"
+              }
+            ]
+          },
+          {
+            "section_id": "main_chart_card",
+            "type": "card_chart",
+            "layout": {
+              "display": "block"
+            },
+            "card": {
+              "background_color_token": "--card",
+              "text_color_token": "--card-foreground",
+              "border_color_token": "--border",
+              "border_width_px": 1,
+              "border_radius_token": "--radius-lg",
+              "shadow_token": "--shadow-sm",
+              "padding_all_px": 16
+            },
+            "content": {
+              "header": {
+                "layout": {
+                  "display": "flex",
+                  "justify_content": "space-between",
+                  "align_items": "center",
+                  "margin_bottom_px": 16
+                },
+                "title": {
+                  "text_role": "CHART_TITLE",
+                  "font_size_px": 16,
+                  "font_weight": 600,
+                  "color_token": "--foreground"
+                },
+                "subtitle": {
+                  "text_role": "CHART_SUBTITLE",
+                  "font_size_px": 14,
+                  "font_weight": 400,
+                  "color_token": "--muted-foreground"
+                },
+                "actions": {
+                  "type": "single_select",
+                  "optional": true,
+                  "control_height_px": 32,
+                  "background_color_token": "--card",
+                  "border_color_token": "--border",
+                  "text_color_token": "--foreground",
+                  "border_radius_token": "--radius-md",
+                  "horizontal_padding_px": 12,
+                  "font_size_px": 14
+                }
+              },
+              "chart_area": {
+                "height_px": 260,
+                "margin_bottom_px": 8,
+                "chart_type": "area",
+                "gridline_color_token": "--border",
+                "axis_label_color_token": "--muted-foreground",
+                "series": [
+                  {
+                    "series_id": "visitors_main",
+                    "color_token": "--chart-1",
+                    "thickness_px": 2,
+                    "fill_opacity": 0.3
+                  },
+                  {
+                    "series_id": "visitors_secondary",
+                    "color_token": "--chart-2",
+                    "thickness_px": 2,
+                    "fill_opacity": 0.2
+                  }
+                ]
+              },
+              "footer": {
+                "layout": {
+                  "display": "flex",
+                  "justify_content": "space-between",
+                  "align_items": "center",
+                  "margin_top_px": 8
+                },
+                "primary_text": {
+                  "text_role": "CHART_TREND_TEXT",
+                  "font_size_px": 14,
+                  "font_weight": 500,
+                  "color_token": "--foreground"
+                },
+                "secondary_text": {
+                  "text_role": "CHART_HELPER_TEXT",
+                  "font_size_px": 12,
+                  "font_weight": 400,
+                  "color_token": "--muted-foreground"
+                }
+              }
+            }
+          }
+        ],
+        "global_rules": {
+          "card_title_spacing_px": 4,
+          "card_vertical_content_spacing_px": 8,
+          "card_row_to_next_section_spacing_px": 24,
+          "font_family_sans_token": "--font-sans",
+          "corner_radius_for_buttons_token": "--radius-md",
+          "corner_radius_for_cards_token": "--radius-lg",
+          "shadow_for_interactive_cards_token": "--shadow-sm",
+          "shadow_for_popovers_token": "--shadow-md"
+        }
+      }
+    },
+    {
+      "pattern_id": "StandardForm_v1",
+      "type": "form_page",
+      "spec": {
+        "pattern_id": "StandardForm_v1",
+        "type": "form_page",
+        "page": {
+          "background_color_token": "--background",
+          "text_color_token": "--foreground",
+          "padding_horizontal_px": 24,
+          "padding_vertical_px": 24,
+          "max_width_px": 720,
+          "layout": "centered_column"
+        },
+        "sections": [
+          {
+            "section_id": "form_header",
+            "type": "form_header",
+            "content": {
+              "title": {
+                "text_role": "FORM_TITLE",
+                "font_size_px": 22,
+                "font_weight": 600,
+                "color_token": "--foreground",
+                "margin_bottom_px": 8
+              },
+              "description": {
+                "text_role": "FORM_DESCRIPTION",
+                "font_size_px": 14,
+                "font_weight": 400,
+                "color_token": "--muted-foreground",
+                "margin_bottom_px": 16
+              }
+            }
+          },
+          {
+            "section_id": "form_fields",
+            "type": "field_groups",
+            "layout": {
+              "vertical_gap_between_fields_px": 16,
+              "vertical_gap_between_groups_px": 24
+            },
+            "groups": [
+              {
+                "group_id": "billing_details",
+                "group_title": {
+                  "optional": true,
+                  "text_role": "GROUP_TITLE",
+                  "font_size_px": 16,
+                  "font_weight": 600,
+                  "color_token": "--foreground",
+                  "margin_bottom_px": 8
+                },
+                "fields": [
+                  {
+                    "field_id": "full_name",
+                    "field_type": "text",
+                    "label": {
+                      "text_role": "LABEL",
+                      "font_size_px": 14,
+                      "font_weight": 500,
+                      "color_token": "--foreground",
+                      "margin_bottom_px": 4
+                    },
+                    "input": {
+                      "height_px": 40,
+                      "background_color_token": "--card",
+                      "border_color_token": "--input",
+                      "text_color_token": "--foreground",
+                      "border_radius_token": "--radius-md",
+                      "padding_horizontal_px": 12,
+                      "padding_vertical_px": 8
+                    },
+                    "helper_text": {
+                      "optional": true,
+                      "text_role": "HELPER_TEXT",
+                      "font_size_px": 12,
+                      "font_weight": 400,
+                      "color_token": "--muted-foreground",
+                      "margin_top_px": 4
+                    }
+                  },
+                  {
+                    "field_id": "email",
+                    "field_type": "text",
+                    "same_structure_as": "full_name"
+                  }
+                ]
+              },
+              {
+                "group_id": "payment_plan",
+                "group_title": {
+                  "optional": false,
+                  "text_role": "GROUP_TITLE",
+                  "font_size_px": 16,
+                  "font_weight": 600,
+                  "color_token": "--foreground",
+                  "margin_bottom_px": 8
+                },
+                "fields": [
+                  {
+                    "field_id": "plan_type",
+                    "field_type": "select",
+                    "same_structure_as": "full_name",
+                    "options_role": "PLAN_OPTIONS"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "section_id": "form_actions",
+            "type": "form_actions",
+            "layout": {
+              "display": "flex",
+              "justify_content": "flex-end",
+              "horizontal_gap_between_buttons_px": 8,
+              "margin_top_px": 24
+            },
+            "buttons": [
+              {
+                "button_id": "cancel",
+                "variant": "secondary",
+                "size": "medium",
+                "background_color_token": "--secondary",
+                "text_color_token": "--secondary-foreground",
+                "border_radius_token": "--radius-md",
+                "padding_horizontal_px": 12,
+                "padding_vertical_px": 8
+              },
+              {
+                "button_id": "submit",
+                "variant": "primary",
+                "size": "medium",
+                "background_color_token": "--primary",
+                "text_color_token": "--primary-foreground",
+                "border_radius_token": "--radius-md",
+                "padding_horizontal_px": 16,
+                "padding_vertical_px": 8
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pattern_id": "SettingsWithSidebar_v1",
+      "type": "settings_page",
+      "spec": {
+        "pattern_id": "SettingsWithSidebar_v1",
+        "type": "settings_page",
+        "page": {
+          "background_color_token": "--background",
+          "text_color_token": "--foreground",
+          "padding_horizontal_px": 24,
+          "padding_vertical_px": 24,
+          "max_width_px": 1200,
+          "layout": "two_column_with_sidebar"
+        },
+        "layout": {
+          "sidebar_width_px": 260,
+          "content_min_width_px": 640,
+          "horizontal_gap_px": 24
+        },
+        "sections": [
+          {
+            "section_id": "settings_shell",
+            "type": "two_column",
+            "columns": {
+              "sidebar": {
+                "background_color_token": "--sidebar",
+                "text_color_token": "--sidebar-foreground",
+                "border_color_token": "--sidebar-border",
+                "border_radius_token": "--radius-lg",
+                "shadow_token": "--shadow-2xs",
+                "padding_all_px": 16,
+                "items": [
+                  {
+                    "item_id": "profile",
+                    "text_role": "SIDEBAR_LINK",
+                    "font_size_px": 14,
+                    "font_weight": 500,
+                    "color_token": "--sidebar-foreground",
+                    "padding_vertical_px": 8,
+                    "padding_horizontal_px": 12,
+                    "border_radius_token": "--radius-md",
+                    "state": "default"
+                  },
+                  {
+                    "item_id": "billing",
+                    "same_structure_as": "profile",
+                    "state": "active",
+                    "background_color_token": "--sidebar-primary",
+                    "active_text_color_token": "--sidebar-primary-foreground"
+                  },
+                  {
+                    "item_id": "notifications",
+                    "same_structure_as": "profile",
+                    "state": "default"
+                  }
+                ]
+              },
+              "content": {
+                "background_color_token": "--card",
+                "text_color_token": "--card-foreground",
+                "border_color_token": "--border",
+                "border_radius_token": "--radius-lg",
+                "shadow_token": "--shadow-sm",
+                "padding_all_px": 24,
+                "sections": [
+                  {
+                    "content_section_id": "section_header",
+                    "type": "content_header",
+                    "title": {
+                      "text_role": "SECTION_TITLE",
+                      "font_size_px": 22,
+                      "font_weight": 600,
+                      "color_token": "--foreground",
+                      "margin_bottom_px": 4
+                    },
+                    "description": {
+                      "text_role": "SECTION_DESCRIPTION",
+                      "font_size_px": 14,
+                      "font_weight": 400,
+                      "color_token": "--muted-foreground",
+                      "margin_bottom_px": 16
+                    }
+                  },
+                  {
+                    "content_section_id": "section_body",
+                    "type": "form_group",
+                    "ref_pattern_id": "StandardForm_v1"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "code": {
+    "css_root_snippet": "/* ימולא על ידי הגנרטור לפי css_root_variables */",
+    "inline_theme_snippet": "/* ימולא על ידי הגנרטור לפי mapping קבוע */",
+    "tailwind_config_snippet": "/* ימולא על ידי הגנרטור לפי spacing_scale_px והטוקנים */",
+    "react_examples": {
+      "DashboardSummaryWithChart": "/* ימולא על ידי הגנרטור (DashboardSummaryWithChart.jsx) */",
+      "StandardForm": "/* ימולא על ידי הגנרטור (StandardForm.jsx) */",
+      "SettingsWithSidebar": "/* ימולא על ידי הגנרטור (SettingsWithSidebar.jsx) */"
+    }
+  }
+}
